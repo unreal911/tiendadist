@@ -2,7 +2,7 @@ const express = require('express')
 const cors = require('cors')
 const app = express()
 const path = require('path')
-const port = 3000
+const port = 4250
 app.use(cors())
 app.use(express.static(__dirname + '/public'))
 
@@ -14,4 +14,4 @@ app.get('/', (req, res) => {
 
 })
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+app.listen(port, () => console.log(`Servidor funcionando ${port}!`))
